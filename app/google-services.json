@@ -1,0 +1,58 @@
+{
+  "project_info": {
+    "project_number": "540627802185",
+    "firebase_url": "https://transport-ed559.firebaseio.com",
+    "project_id": "transport-ed559",
+    "storage_bucket": "transport-ed559.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540627802185:android:cb1dc5bd4520527f",
+        "android_client_info": {
+          "package_name": "com.conveyor.transport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540627802185-bpqgnd86gh76pmcvkrcncst28gfqmaeh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.conveyor.transport",
+            "certificate_hash": "81c25e057e8583b28ccb55f5c19d41c2a92b2c3e"
+          }
+        },
+        {
+          "client_id": "540627802185-f38unsru5g4lu8sakr633tuss9jss6g3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDec4oKqPKPWRNB1EOd3oaTEWI6uW0I64A"
+        },
+        {
+          "current_key": "AIzaSyA5A_pn9U9A8blJgx7iT25sUtegaWSg39c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540627802185-f38unsru5g4lu8sakr633tuss9jss6g3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
