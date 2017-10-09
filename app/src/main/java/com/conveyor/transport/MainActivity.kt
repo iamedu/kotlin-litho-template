@@ -2,9 +2,9 @@ package com.conveyor.transport
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.conveyor.transport.specs.Login
 import com.facebook.litho.ComponentContext
 import com.facebook.litho.LithoView
-import com.facebook.litho.widget.Text
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,10 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         val lithoView = LithoView.create(
                 this,
-                Text.create(c)
-                    .text("Hello world!")
-                    .textSizeDip(50f)
-                    .build())
+                Login.create(c).build())
 
         setContentView(lithoView)
     }
