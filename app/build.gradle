@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.conveyor.transport"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation ('com.android.support.test.espresso:espresso-core:3.0.1', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
+    // Litho
+    def litho_version = '0.6.1'
+    compile "com.facebook.litho:litho-core:$litho_version"
+    compile "com.facebook.litho:litho-widget:$litho_version"
+    provided "com.facebook.litho:litho-annotations:$litho_version"
+    kapt "com.facebook.litho:litho-annotations:$litho_version"
+    kapt "com.facebook.litho:litho-processor:$litho_version"
+
+    // SoLoader
+    compile 'com.facebook.soloader:soloader:0.2.0'
+
+    // For debugging
+    debugCompile "com.facebook.litho:litho-stetho:$litho_version"
+
+    compile "com.facebook.litho:litho-fresco:$litho_version"
+    testCompile("com.facebook.litho:litho-testing:$litho_version") {
+        exclude group: 'com.google.code.findbugs'
+    }
+}
