@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val c = ComponentContext(this)
+
         val lithoView = LithoView.create(
                 this,
                 Text.create(c)
